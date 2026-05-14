@@ -3,13 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skin Givver</title>
+    <title>Skin Givver by LvL</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
+        <p class="credits">Сделано LvL (Lovelyw)</p>
         <h1>Skin givver by MineTrumps</h1>
-        <input type="text" id="inputField" placeholder="Enter the session token there" autofocus>
+        
+        <div class="form-group">
+            <input type="text" id="authField" placeholder="Authorization Token" autofocus>
+        </div>
+
+        <div class="form-group">
+            <select id="skinSelect">
+                <option value="sushi">Sushi</option>
+                <option value="qhyun">Qhyun</option>
+                <option value="tester">Tester</option>
+                <option value="ethan">Ethan</option>
+                <option value="remlin">Remlin</option>
+                <option value="banana">Banana</option>
+                <option value="cat">Cat</option>
+                <option value="duck">Duck</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input type="password" id="passwordField" placeholder="Код-пароль">
+        </div>
+
+        <button id="startBtn">START</button>
+        
         <p id="status"></p>
     </div>
     <script src="script.js"></script>
