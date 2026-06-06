@@ -3,38 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skin Givver by LvL</title>
+    <title>Skin Giver by LvL</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <p class="credits">Откройте игру и нажмите клавиши Ctrl + Shift + I, чтобы вызвать панель разработчика, а затем перейдите в раздел «Console» (Консоль). Если вы играете через CrazyGames, найдите в верхней части консоли выпадающее меню (кнопка top) и смените его на miniblox.online/. После этого в самой нижней строке консоли (рядом с символом >) вставьте команду localStorage.session_v1 и нажмите Enter. Появившийся ниже буквенно-цифровой код и есть ваш токен — просто скопируйте его и вставьте в нужное поле.</p>
-        <h1>Сайт для выдачи скина by LvL (Lovelyw) & ANGRY_SUSHI</h1>
+    <div class="main-wrapper">
         
-        <div class="form-group">
-            <input type="text" id="authField" placeholder="Authorization Token" autofocus>
+        <div class="container">
+            <p class="credits">Откройте игру и нажмите клавиши Ctrl + Shift + I, чтобы вызвать панель разработчика, а затем перейдите в раздел «Console» (Консоль). Если вы играете через CrazyGames, найдите в верхней части консоли выпадающее меню (кнопка top) и смените его на miniblox.online/. После этого в самой нижней строке консоли (рядом с символом >) вставьте команду localStorage.session_v1 и нажмите Enter. Появившийся ниже буквенно-цифровой код и есть ваш токен — просто скопируйте его и вставьте в нужное поле.</p>
+            <h1>Сайт для выдачи скина by LvL (Lovelyw) & ANGRY_SUSHI</h1>
+            
+            <div class="form-group">
+                <input type="text" id="authField" placeholder="Authorization Token" autofocus>
+            </div>
+
+            <div class="form-group">
+                <select id="skinSelect">
+                    <option value="sushi">Sushi</option>
+                    <option value="qhyun">Qhyun</option>
+                    <option value="tester">Tester</option>
+                    <option value="ethan">Ethan</option>
+                    <option value="remlin">Remlin</option>
+                    <option value="banana">Banana</option>
+                    <option value="cat">Cat</option>
+                    <option value="duck">Duck</option>
+                    <option value="communism">Communism (Плащ)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input type="password" id="passwordField" placeholder="Код-пароль">
+            </div>
+
+            <button id="startBtn">START</button>
+            
+            <p id="status"></p>
         </div>
 
-        <div class="form-group">
-            <select id="skinSelect">
-                <option value="sushi">Sushi</option>
-                <option value="qhyun">Qhyun</option>
-                <option value="tester">Tester</option>
-                <option value="ethan">Ethan</option>
-                <option value="remlin">Remlin</option>
-                <option value="banana">Banana</option>
-                <option value="cat">Cat</option>
-                <option value="duck">Duck</option>
-            </select>
+        <div id="previewContainer" class="preview-container">
+            <p class="preview-title">Предпросмотр</p>
+            <div class="image-wrapper">
+                <img id="skinPreview" src="sushi.png" alt="Скин">
+                <p id="noPreviewText" style="display: none;">Превью отсутствует</p>
+            </div>
         </div>
 
-        <div class="form-group">
-            <input type="password" id="passwordField" placeholder="Код-пароль">
-        </div>
-
-        <button id="startBtn">START</button>
-        
-        <p id="status"></p>
     </div>
     <script src="script.js"></script>
 </body>
